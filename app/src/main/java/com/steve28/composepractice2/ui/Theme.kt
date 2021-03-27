@@ -1,4 +1,4 @@
-package com.steve28.composepractice2.theme
+package com.steve28.composepractice2.ui
 
 import androidx.compose.material.*
 import androidx.compose.runtime.Composable

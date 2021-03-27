@@ -9,7 +9,6 @@ import androidx.compose.ui.graphics.Color
 import androidx.compose.ui.text.style.TextAlign
 import androidx.compose.ui.unit.*
 import com.steve28.composepractice2.elements.*
-import com.steve28.composepractice2.theme.*
 import com.steve28.composepractice2.utils.ComposeUtils
 import com.steve28.composepractice2.utils.Utils
 
