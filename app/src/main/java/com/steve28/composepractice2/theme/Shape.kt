@@ -1,4 +1,4 @@
-package com.steve28.composepractice2.ui
+package com.steve28.composepractice2.theme
 
 import androidx.compose.foundation.shape.RoundedCornerShape
 import androidx.compose.material.Shapes

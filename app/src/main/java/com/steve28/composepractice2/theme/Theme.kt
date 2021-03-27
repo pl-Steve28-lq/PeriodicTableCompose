@@ -1,19 +1,23 @@
-package com.steve28.composepractice2.ui
+package com.steve28.composepractice2.theme
 
 import androidx.compose.foundation.isSystemInDarkTheme
 import androidx.compose.material.*
 import androidx.compose.runtime.Composable
 import androidx.compose.ui.graphics.Color
 
+private val middle = Color(0xff4c4c4c)
+private val light = Color(0xff787878)
+private val dark = Color(0xff242424)
+
 private val DarkColorPalette = darkColors(
-    primary = Color(0xff1976d2),
-    primaryVariant = Color(0xff004ba0),
+    primary = middle,
+    primaryVariant = light,
     secondary = purple200
 )
 
 private val LightColorPalette = lightColors(
-    primary = Color(0xff63a4ff),
-    primaryVariant = Color(0xff004ba0),
+    primary = middle,
+    primaryVariant = dark,
     secondary = purple200
 )
 

@@ -1,36 +1,18 @@
 package com.steve28.composepractice2
 
 import android.os.Bundle
+import android.util.Log
+import androidx.activity.compose.setContent
 import androidx.appcompat.app.AppCompatActivity
-import androidx.compose.material.*
-import androidx.compose.runtime.Composable
-import androidx.compose.ui.platform.setContent
-import androidx.compose.ui.tooling.preview.Preview
-import com.steve28.composepractice2.ui.SteveTheme
+import androidx.compose.ui.unit.dp
 
 class MainActivity : AppCompatActivity() {
     override fun onCreate(savedInstanceState: Bundle?) {
         super.onCreate(savedInstanceState)
-        setContent {
-            SteveTheme {
-                // A surface container using the 'background' color from the theme
-                Surface(color = SteveTheme.colors().background) {
-                    Greeting("Android")
-                }
-            }
-        }
+        setContent { MainComponent.Main() }
     }
-}
 
-@Composable
-fun Greeting(name: String) {
-    Text(text = "Hello $name!")
-}
-
-@Preview(showBackground = true)
-@Composable
-fun DefaultPreview() {
-    SteveTheme {
-        Greeting("Android")
+    companion object {
+        fun log(msg: Any) = Log.d("TAG", msg.toString())
     }
 }
